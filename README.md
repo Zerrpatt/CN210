@@ -8,7 +8,7 @@ MIPS Instruction format
 
 มีอยู่ 3 ประเภท
 
-<br>![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FThe-MIPS-instruction-format_fig1_269463299&psig=AOvVaw2ZCN6lnToN01nAlnZiq36K&ust=1588139638895000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDRg6-3iukCFQAAAAAdAAAAABAD)
+<br>![image](https://www.google.com/search?q=i+format+mips&tbm=isch&ved=2ahUKEwjog9Set4rpAhUo1HMBHQeZBFoQ2-cCegQIABAA&oq=i+format+mips&gs_lcp=CgNpbWcQAzICCAA6BggAEAgQHjoECAAQGFCtlgFYgKQBYPekAWgAcAB4AIABSIgB1QKSAQE1mAEAoAEBqgELZ3dzLXdpei1pbWc&sclient=img&ei=4MSnXuiTCKioz7sPh7KS0AU&bih=969&biw=1920&rlz=1C1CHBF_enTH844TH844#imgrc=JkMSyFMheAgeoM)
 
 * R-Format ใช้ในการคำนวณทางตรรกศาสตร์
   * ALU  =>  alu $rd,$rs,$rt
