@@ -90,7 +90,7 @@ single cycle
   * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
   
 multi cycle
-<br>[image](https://imagecloud.nos-eastchina1.126.net/Computer%20Engineering/Multi-cycle%20Datapath.png)
+<br>[image](https://cseweb.ucsd.edu/~j2lau/cs141/multi_cycle_cpu_datapath.png)
 * คุณสมบัติของ multi cycle
   * มี 1 ALU
   * มี 1 Memory 
@@ -102,7 +102,7 @@ multi cycle
  
  ## การบ้านครั้งที่ 4
  ### การทำงานของ multi cycle ในคำสั่ง lw
- <br>[image](https://imagecloud.nos-eastchina1.126.net/Computer%20Engineering/Multi-cycle%20Datapath.PNG)
+ <br>[image](https://cseweb.ucsd.edu/~j2lau/cs141/multi_cycle_cpu_datapath.png)
  lw => $rt,offset($rs)
  
  มีการทำงาน 5 ขั้นตอน
@@ -122,5 +122,5 @@ multi cycle
  
  ## การบ้านครั้งที่ 5
  ### การทำงานของ multi cycle ในคำสั่ง beq
- <br>[image](https://imagecloud.nos-eastchina1.126.net/Computer%20Engineering/Multi-cycle%20Datapath.PNG)
+<br>[image](https://cseweb.ucsd.edu/~j2lau/cs141/multi_cycle_cpu_datapath.png)
  beq => $rs,$rt,$offset
