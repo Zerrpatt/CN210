@@ -169,6 +169,14 @@ MIPS Instruction format
 <br>[คลิปอธิบาย State Machine ของคำสั่ง R-Type](https://www.youtube.com/watch?v=Xz3CbvA0oJ8&t=9s)
 
 ## การบ้านครั้งที่ 7
-### อธิบานการทำงานของ Pipelining
+### อธิบายการทำงานของ Pipelining
+<br>![image](https://cdn.discordapp.com/attachments/695618555273543763/704609196251021412/65730E13-9525-4786-8BB8-0284E99E6FBE.jpg)
 
+            Pipeline มีหลักการทำงานคือ 1 คำสั่งจบในหนึ่งหรือหลาย cycle ก็ได้ 
+            แม้คำสั่งแรกยังไม่เสร็จแต่สามารถนำคำสั่งถัดไปมาทำต่อได้เลย
+ตัวอย่างเช่น
+<br>![image](https://cdn.discordapp.com/attachments/695618555273543763/704610493809164328/747A0249-D67F-4D91-8E7C-1011844BAC82.jpg)
 
+            คำสั่ง B เริ่มทำงานได้โดยไม่ต้องรอให้คำสั่ง A จบ เมื่อคำสั่ง A จบในขั้นตอนเดียวกับที่คำสั่ง B ต้องทำ
+### คลิปการบ้านครั้งที่ 7
+<br>[คลิปอธิบายการทำงานของ Pipelining](https://www.youtube.com/watch?v=vq14bLjJTcA)
