@@ -90,11 +90,37 @@ single cycle
   * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
   
 multi cycle
-<br>[image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
+<br>[image](https://imagecloud.nos-eastchina1.126.net/Computer%20Engineering/Multi-cycle%20Datapath.PNG)
 * คุณสมบัติของ multi cycle
   * มี 1 ALU
   * มี 1 Memory 
   * แต่ละคำสั่ง ไม่จบใน cycle เดียว
   * เวลาแต่ละคำสั่ง ไม่เท่ากัน
-  * มีการเก็บพัก data ที่ตัวแปร A,B ก่อน
-  * มีการนำค่าที่คำนวณได้ไปเก็บ ใน ALUout ก่อนด้วย
+ 
+ ### คลิปการบ้านครั้งที่ 3
+ <br>[คลิปเปรียบเทียบ Single cycle และ Multi cycle](https://www.youtube.com/watch?v=Gck7U_8bayQ&t=3s)
+ 
+ ## การบ้านครั้งที่ 4
+ ### การทำงานของ multi cycle ในคำสั่ง lw
+ <br>[image](https://imagecloud.nos-eastchina1.126.net/Computer%20Engineering/Multi-cycle%20Datapath.PNG)
+ lw => $rt,offset($rs)
+ 
+ มีการทำงาน 5 ขั้นตอน
+ 
+ 1.PC ส่งคำสั่งมาเก็บที่ memory ส่งต่อไปยัง instruction register ขณะเดียวกันนำ PC + 4
+ 
+ 2.แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และทำการ shiftซ้าย 2 หลัก) มาที่ ALU และนำมาบวกกับ PC(PC+4) และไปเก็บที่ ALUout
+ 
+ 3.นำค่า จาก A เข้ามาบวกกับ offset และนำค่าไปไว้ที่ ALUout
+ 
+ 4.ค่าที่ได้จาก ALUout คือ address มันจะไปชี้ address นี้ที่ memory และก็อ่านค่าออกมา
+ 
+ 5.ค่าที่อ่านออกมานำไปใส่ใน register rt
+ 
+ ### คลิปการบ้านครั้งที่ 4
+ <br>[คลิปอธิบายการทำงานของ multi cycle ในคำสั่ง lw](https://www.youtube.com/watch?v=y4UWtdeEvj0&t=50s)
+ 
+ ## การบ้านครั้งที่ 5
+ ### การทำงานของ multi cycle ในคำสั่ง beq
+ <br>[image](https://imagecloud.nos-eastchina1.126.net/Computer%20Engineering/Multi-cycle%20Datapath.PNG)
+ beq => $rs,$rt,$offset
