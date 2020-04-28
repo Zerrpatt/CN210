@@ -8,7 +8,7 @@ MIPS Instruction format
 
 มีอยู่ 3 ประเภท
 
-<br>![image](https://www.google.com/search?q=i+format+mips&tbm=isch&ved=2ahUKEwjog9Set4rpAhUo1HMBHQeZBFoQ2-cCegQIABAA&oq=i+format+mips&gs_lcp=CgNpbWcQAzICCAA6BggAEAgQHjoECAAQGFCtlgFYgKQBYPekAWgAcAB4AIABSIgB1QKSAQE1mAEAoAEBqgELZ3dzLXdpei1pbWc&sclient=img&ei=4MSnXuiTCKioz7sPh7KS0AU&bih=969&biw=1920&rlz=1C1CHBF_enTH844TH844#imgrc=JkMSyFMheAgeoM)
+<br>![image](https://www.researchgate.net/profile/Flavio_Padua/publication/269463299/figure/fig1/AS:392119614230533@1470500009360/The-MIPS-instruction-format.png)
 
 * R-Format ใช้ในการคำนวณทางตรรกศาสตร์
   * ALU  =>  alu $rd,$rs,$rt
@@ -16,7 +16,7 @@ MIPS Instruction format
 
 * I-Format ใช้ย้ายข้อมูลเปลี่ยนข้อมูล
   * ALUi    =>  alui $rt,$rs,value
-  * Data Tranfers  =>  lw $rt,offset($rs)
+  * Data Tranfers  =>  lw $rt,offset($rs) |
                        sw $rt,offset($rs)
   * Branch  =>  beq $rs,$rt,offset
 
