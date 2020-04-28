@@ -11,18 +11,18 @@ MIPS Instruction format
 <br>![image](https://www.researchgate.net/profile/Flavio_Padua/publication/269463299/figure/fig1/AS:392119614230533@1470500009360/The-MIPS-instruction-format.png)
 
 * R-Format ใช้ในการคำนวณทางตรรกศาสตร์
-  * ALU  =>  alu $rd,$rs,$rt
-  * jr   =>  jr  $rs
+  * ALU   =>  alu $rd,$rs,$rt
+  * jr    =>  jr  $rs
 
 * I-Format ใช้ย้ายข้อมูลเปลี่ยนข้อมูล
   * ALUi    =>  alui $rt,$rs,value
-  * Data Tranfers  =>  lw $rt,offset($rs) |
-                       sw $rt,offset($rs)
+  * Data Tranfers  =>  lw $rt,offset($rs)
+                     * sw $rt,offset($rs)
   * Branch  =>  beq $rs,$rt,offset
 
 * J-Format ย้ายไปทำงานที่อื่น
-   * Jump    =>  j address
-   * Jump&Link   =>  jal address
+   * Jump   =>  j address
+   * Jump&Link  =>  jal address
   
   
 ## การบ้านครั้งที่ 1
@@ -66,8 +66,8 @@ MIPS Instruction format
     00000004:           1A000000        //data
     ...
     01000000:           8C090004        //lw $9,$0(4)
-    01000004:           8D210000       //lw $1,$9(0)
-    01000008:           8D220004       //lw $2,$9(4)
+    01000004:           8D210000        //lw $1,$9(0)
+    01000008:           8D220004        //lw $2,$9(4)
     0100000C:           00221820        //add $3,$1,$2
     01000010:           AD230008        //sw $9,$0(4)
     ...
