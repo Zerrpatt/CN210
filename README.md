@@ -16,18 +16,26 @@ MIPS Instruction format
 * I-Format ใช้ย้ายข้อมูลเปลี่ยนข้อมูล
   * ALUi    =>  alui $rt,$rs,value
   * Data Tranfers  =>  lw $rt,offset($rs)
-                     sw $rt,offset($rs)
+                       sw $rt,offset($rs)
   * Branch  =>  beq $rs,$rt,offset
-  
- * J-Format ย้ายไปทำงานที่อื่น
-  * Jump    =>  j address
-  * Jump&Link   =>  jal address
+
+* J-Format ย้ายไปทำงานที่อื่น
+   * Jump    =>  j address
+   * Jump&Link   =>  jal address
   
   
 ## การบ้านครั้งที่ 1
 ### คำสั่ง JUMP ในคอมพิวเตอร์ MIPS
 เป็นคำสั่งประเภท J-Format
 
-การทำงานคือ 
+การทำงานคือ นำ address มาเขียนในรูปเลขฐาน 2
+และนำเลขฐาน 2 ที่ได้มา ตัด2เลขหลักสุดท้าย ไปเติมที่หลักแรก
+ตัวอย่าง      
+            1100 0001 1111 1100 0000 1000 0100 11(00) >> นำออก
+เติมเข้า   >> (00)11 0000 0111 1111 0000 0010 0001 0011
+และนำมาเขียนเป็นเลขฐาน 16 ในที่นี้จะได้เท่ากับ 27f0223
+ซึ่ง opcode ของ jump = 000010
 
+### การบ้านครั้งที่ 1
+<br>[คลิปอธิบายคำสั่ง JUMP in MIPS](https://www.youtube.com/watch?v=t2JYzAhNM5A)
 
