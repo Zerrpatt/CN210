@@ -79,6 +79,7 @@ MIPS Instruction format
 ### คลิปการบ้านครั้งที่ 2
 <br>[คลิปอธิบายการทำงานของ CPU](https://www.youtube.com/watch?v=NIl0aoX2EJg&t=4s)
 
+
 ## การบ้านครั้งที่ 3
 ### เปรียบเทียบ Single Cycle และ Multi Cycle
 **single cycle**
@@ -101,6 +102,7 @@ MIPS Instruction format
  ### คลิปการบ้านครั้งที่ 3
 <br>[คลิปเปรียบเทียบ Single cycle และ Multi cycle](https://www.youtube.com/watch?v=Gck7U_8bayQ&t=3s)
  
+ 
  ## การบ้านครั้งที่ 4
  ### การทำงานของ multi cycle ในคำสั่ง lw
 <br>![image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
@@ -120,6 +122,7 @@ MIPS Instruction format
  
  ### คลิปการบ้านครั้งที่ 4
  <br>[คลิปอธิบายการทำงานของ multi cycle ในคำสั่ง lw](https://www.youtube.com/watch?v=y4UWtdeEvj0&t=50s)
+ 
  
  ## การบ้านครั้งที่ 5
  ### การทำงานของ multi cycle ในคำสั่ง beq
@@ -173,6 +176,7 @@ MIPS Instruction format
             
 ### คลิปการบ้านครั้งที่ 6
 <br>[คลิปอธิบาย State Machine ของคำสั่ง R-Type](https://www.youtube.com/watch?v=Xz3CbvA0oJ8&t=9s)
+
 
 ## การบ้านครั้งที่ 7
 ### อธิบายการทำงานของ Pipelining
