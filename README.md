@@ -24,6 +24,10 @@ MIPS Instruction format
   * Jump&Link   =>  jal address
   
   
+## การบ้านครั้งที่ 1
+### คำสั่ง JUMP ในคอมพิวเตอร์ MIPS
+เป็นคำสั่งประเภท J-Format
 
+การทำงานคือ 
 
 
