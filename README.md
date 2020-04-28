@@ -138,6 +138,7 @@ MIPS Instruction format
 ## การบ้านครั้งที่ 6
 ### State Machine ของคำสั่ง R-type
 **Cycle 1 Instruction Fetch**
+
 <br>![image](https://cdn.discordapp.com/attachments/695618555273543763/704601138250645514/S__860162.jpg)
 
             MemRead = 1  อ่านค่าจาก memory
@@ -176,10 +177,12 @@ MIPS Instruction format
 ### อธิบายการทำงานของ Pipelining
 <br>![image](https://cdn.discordapp.com/attachments/695618555273543763/704609196251021412/65730E13-9525-4786-8BB8-0284E99E6FBE.jpg)
 
+
             Pipeline มีหลักการทำงานคือ 1 คำสั่งจบในหนึ่งหรือหลาย cycle ก็ได้ 
             แม้คำสั่งแรกยังไม่เสร็จแต่สามารถนำคำสั่งถัดไปมาทำต่อได้เลย
 ตัวอย่างเช่น
 <br>![image](https://cdn.discordapp.com/attachments/695618555273543763/704610493809164328/747A0249-D67F-4D91-8E7C-1011844BAC82.jpg)
+
 
             คำสั่ง A แบ่งการทำงานเป็น 4 ขั้นตอน เมื่อคำสั่ง A ทำขั้นตอนแรกเสร็จและไปขั้นตอนที่สองต่อ
             จะสามารถนำคำสั่ง B มาทำขั้นตอนแรกต่อได้เลย โดยไม่ต้องรอให้คำสั่ง A จบ
