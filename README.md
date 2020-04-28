@@ -147,24 +147,28 @@ MIPS Instruction format
             ALUSrcB = 1  ถูกควบคุมโดย ALUSrcB เข้า 3 ที่ MUX
             ALUOP = ADD  ถูกควบคุมโดย ALUOP คุมให้เป็นคำสั่ง ADD
             PCWrite = 1, PCSource = 1  นำค่ากลับไปใส่ที่ PC
+            
 **Cycle 2 Decode & Register Fetch**
 <br>![image](https://cdn.discordapp.com/attachments/695618555273543763/704601120462340096/S__860164.jpg)
 
             ALUSrcA = 0  ถูกควบคุมโดย ALUSrcA เข้า 0 ที่ MUX
             ALUSrcB = 3  ถูกควบคุมโดย ALUSrcB เข้า 3 ที่ MUX
             ALUOP = 0  ถูกควบคุมโดย ALUOP คุมให้เป็นคำสั่ง ADD
+            
 **Cycle 3 R-Format Execution**
 <br>![image](https://cdn.discordapp.com/attachments/695618555273543763/704601141400436796/S__860165.jpg)
 
             ALUSrcA = 1  ถูกควบคุมโดย ALUSrcA เข้า 1 ที่ MUX
             ALUSrcB = 0  ถูกควบคุมโดย ALUSrcB เข้า 0 ที่ MUX
             ALUOP = 2  ถูกควบคุมโดย ALUOP คุมให้เป็นคำสั่งตาม Instruction register
+            
 **Cycle 4 R-Format Write Register**
 <br>![image](https://cdn.discordapp.com/attachments/695618555273543763/704601137742872656/S__860166.jpg)
 
             RegWrite = 1  มีการเขียนค่าบน register
             MemtoReg = 0  นำค่าจาก memory ไปยัง register
             RegDst = 1  ถูกควบคุมโดย RegDst เข้า 1 ที่ MUX
+            
 ### คลิปการบ้านครั้งที่ 6
 <br>[คลิปอธิบาย State Machine ของคำสั่ง R-Type](https://www.youtube.com/watch?v=Xz3CbvA0oJ8&t=9s)
 
