@@ -90,7 +90,7 @@ single cycle
   * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
   
 multi cycle
-<br>[image](https://cseweb.ucsd.edu/~j2lau/cs141/multi_cycle_cpu_datapath.png)
+<br>![image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
 * คุณสมบัติของ multi cycle
   * มี 1 ALU
   * มี 1 Memory 
@@ -98,11 +98,11 @@ multi cycle
   * เวลาแต่ละคำสั่ง ไม่เท่ากัน
  
  ### คลิปการบ้านครั้งที่ 3
- <br>[คลิปเปรียบเทียบ Single cycle และ Multi cycle](https://www.youtube.com/watch?v=Gck7U_8bayQ&t=3s)
+<br>[คลิปเปรียบเทียบ Single cycle และ Multi cycle](https://www.youtube.com/watch?v=Gck7U_8bayQ&t=3s)
  
  ## การบ้านครั้งที่ 4
  ### การทำงานของ multi cycle ในคำสั่ง lw
- <br>[image](https://cseweb.ucsd.edu/~j2lau/cs141/multi_cycle_cpu_datapath.png)
+<br>![image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
  lw => $rt,offset($rs)
  
  มีการทำงาน 5 ขั้นตอน
@@ -122,5 +122,5 @@ multi cycle
  
  ## การบ้านครั้งที่ 5
  ### การทำงานของ multi cycle ในคำสั่ง beq
-<br>[image](https://cseweb.ucsd.edu/~j2lau/cs141/multi_cycle_cpu_datapath.png)
+<br>![image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
  beq => $rs,$rt,$offset
