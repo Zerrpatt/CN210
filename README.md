@@ -90,7 +90,7 @@ single cycle
   * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
   
 multi cycle
-<br>[image](https://imagecloud.nos-eastchina1.126.net/Computer%20Engineering/Multi-cycle%20Datapath.PNG)
+<br>[image](https://imagecloud.nos-eastchina1.126.net/Computer%20Engineering/Multi-cycle%20Datapath.png)
 * คุณสมบัติของ multi cycle
   * มี 1 ALU
   * มี 1 Memory 
