@@ -83,12 +83,18 @@ MIPS Instruction format
 single cycle
 
 <br>![image](https://i.stack.imgur.com/vCvw1.png)
-
-มี 3 ALU
-
-มี 2 Memory
-
-คำสั่งจบใน Cycle เดียว
-
-เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
-
+* คุณสมบัติของ single cycle
+  * มี 3 ALU
+  * มี 2 Memory
+  * คำสั่งจบใน Cycle เดียว
+  * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
+  
+multi cycle
+<br>[image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
+* คุณสมบัติของ multi cycle
+  * มี 1 ALU
+  * มี 1 Memory 
+  * แต่ละคำสั่ง ไม่จบใน cycle เดียว
+  * เวลาแต่ละคำสั่ง ไม่เท่ากัน
+  * มีการเก็บพัก data ที่ตัวแปร A,B ก่อน
+  * มีการนำค่าที่คำนวณได้ไปเก็บ ใน ALUout ก่อนด้วย
