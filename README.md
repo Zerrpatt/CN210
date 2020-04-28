@@ -80,7 +80,7 @@ MIPS Instruction format
 
 ## การบ้านครั้งที่ 3
 ### เปรียบเทียบ Single Cycle และ Multi Cycle
-single cycle
+*single cycle*
 
 <br>![image](https://i.stack.imgur.com/vCvw1.png)
 * คุณสมบัติของ single cycle
@@ -89,7 +89,7 @@ single cycle
   * คำสั่งจบใน Cycle เดียว
   * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
   
-multi cycle
+*multi cycle*
 <br>![image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
 * คุณสมบัติของ multi cycle
   * มี 1 ALU
@@ -103,13 +103,13 @@ multi cycle
  ## การบ้านครั้งที่ 4
  ### การทำงานของ multi cycle ในคำสั่ง lw
 <br>![image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
- lw => $rt,offset($rs)
+ *lw => $rt,offset($rs)*
  
- มีการทำงาน 5 ขั้นตอน
+ มีการทำงาน 5 ขั้นตอน ดังนี้
  
  1.PC ส่งคำสั่งมาเก็บที่ memory ส่งต่อไปยัง instruction register ขณะเดียวกันนำ PC + 4
  
- 2.แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset(แปลงเป็น 32 bits และทำการ shiftซ้าย 2 หลัก) มาที่ ALU และนำมาบวกกับ PC(PC+4) และไปเก็บที่ ALUout
+ 2.แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset แปลงเป็น 32 bits และทำการ shiftซ้าย 2 หลัก มาที่ ALU และนำมาบวกกับ PC(PC+4) และไปเก็บที่ ALUout
  
  3.นำค่า จาก A เข้ามาบวกกับ offset และนำค่าไปไว้ที่ ALUout
  
@@ -123,4 +123,14 @@ multi cycle
  ## การบ้านครั้งที่ 5
  ### การทำงานของ multi cycle ในคำสั่ง beq
 <br>![image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
- beq => $rs,$rt,$offset
+ *beq => $rs,$rt,$offset*
+
+ มีการทำงาน 3 ขั้นตอน ดังนี้
+ 
+ 1.PC ส่งคำสั่งมาเก็บที่ memory ส่งต่อไปยัง instruction register ขณะเดียวกันนำ PC + 4
+ 
+ 2.แปลงคำสั่ง นำค่า rs กับ rt เก็บที่ A,B นำค่า offset แปลงเป็น 32 bits และ shiftซ้าย 2 หลัก มาที่ ALU และนำมาบวกกับ PC(PC+4)
+ 
+ 3.beq เป็นคำสั่งที่ดูว่า A=B หรือไม่ ถ้าเท่ามันจะทำการ jump ไปที่ address ใหม่
+ ### คลิปการบ้านครั้งที่ 5
+ <br>[คลิปอธิบายการทำงานของ multi cycle ในคำสั่ง beq](https://www.youtube.com/watch?v=0z1lgSVu6vI&t=8s)
