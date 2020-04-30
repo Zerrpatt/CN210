@@ -104,6 +104,7 @@ MIPS Instruction format
  
  
  ## การบ้านครั้งที่ 4
+ 
  ### การทำงานของ multi cycle ในคำสั่ง lw
 <br>![image](https://camo.githubusercontent.com/3a759f503101d7359e3b9e88a79a64b022814d5a/68747470733a2f2f692e696d6775722e636f6d2f6d5758485770542e706e67)
  **lw => $rt,offset($rs)**
